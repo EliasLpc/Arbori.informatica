@@ -17,60 +17,31 @@
         <a href="utilitati.html" class="as" >Utilitate</a>
     </nav>
 </header>
+
 <div class="sidemain">
-    
+
 <aside>
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a>  
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
-    <a><h6>ddd</h6> </a> 
+    <a href="#1"><h6>1.Arbore cu radacina</h6> </a> 
+    <a href="#2"><h6>2.Arbore binar</h6> </a> 
+    <a href="#3"><h6>3.Arbore binar complet</h6> </a> 
+    <a href="#4"><h6>4.Arbore binar perfect echilibrat
+    </h6> </a>  
+    <a href="#5"><h6>5.Arbore binar strict</h6> </a> 
+    <a href="#6"><h6>6.Arbore binar de sortare/cautare
+    </h6> </a> 
+    <a href="#7"><h6>7.Arbore AVL
+    </h6> </a> 
+    <a href="#8"><h6>8.Arbore B
+    </h6> </a> 
+    <a href="#9"><h6>9.Arbore de acoperire minima
+    </h6> </a> 
+    <a href="#10"><h6>10.Arbore de intervale
+    </h6> </a> 
+    <a href="#11"><h6>11.Arbore de ordine</h6> </a> 
+   <br><br><br>
 
 </aside>
+
 <main class="tipurimain">
     <h1 id="tip">Tipurile de arbori</h1>
     <p>
@@ -78,20 +49,170 @@
         
     </p>
     <ol class="tips">
-        <li> <b>Arbore cu radacina</b><br>
-            Pentru un arbore se poate stabili un nod special, numit rădăcină.<br> Putem spune că “agățăm” arborele în rădăcină, iar restul nodurilor cad.
+        <li id="1"> <b class="tipp">Arbore cu radacina</b><br>
+            <p>Pentru un arbore se poate stabili un nod special, numit rădăcină.<br> Putem spune că “agățăm” arborele în rădăcină, iar restul nodurilor cad.
 <br>
-Mai jos avem trei arbori cu rădăcină. Toți pornesc de la arborele de mai sus, dar diferă prin alegerea rădăcinii.
-        </li>
+Mai jos avem trei arbori cu rădăcină. Toți pornesc de la arborele de mai sus, dar diferă prin alegerea rădăcinii.</p>
+        
         <div style="display: inline-flex; gap: 6rem; margin-top: 2rem;">
             <img src="https://www.pbinfo.ro/resurse/9dc152/articole/grafuri/arbori/arbore-radacina-2.png">
             <img src="https://www.pbinfo.ro/resurse/9dc152/articole/grafuri/arbori/arbore-radacina-3.png">
             <img src="https://www.pbinfo.ro/resurse/9dc152/articole/grafuri/arbori/arbore-radacina-5.png">
         </div>
-        <li><b>Arbore binar</b><br>
-            Se numește arbore binar un arbore cu rădăcină în care fiecare nod are cel mult doi descendenți direcți: descendentul stâng și descendentul drept.
+        <h4>Fie un arbore cu rădăcina r și x un nod în acest arbore. Atunci:</h4>
+<ul>
+<li>se numește ascendent al lui x orice nod y, diferit de x, aflat pe lanțul de la rădăcină la x;
+<ul><li>rădăcina nu are ascendenți;</li>
+<li>rădăcina este ascendent pentru toate nodurile din arbore;</li>
+</ul></li>
+<li>dacă y este ascendent al lui x și există muchia (y,x), atunci y se numește ascendent direct al lui x sau tatăl lui x;
+<ul><li>rădăcina este singurul nod din arbore care nu are tată;</li></ul></li>
+<li>un nod y este descendent al nodului x, diferit de y, dacă x aparține lanțului de la r la y;
+<ul><li>loi>dacă în plus există muchia (x,y), atunci y este descendent direct sau fiu al lui x;</li>
+<li>un nod care nu are niciun descendent se numește frunză;</li></ul>
+</li>
+<li>două noduri care au același tată se numesc frați;</li>
+<li>lungimea unui lanț de la rădăcina arborelui la un nod x reprezintă nivelul sau adâncimea nodului x;</li>
+<li>lungimea maximă a unui lanț de la rădăcină la un nod al arborelui reprezintă înălțimea arborelui;</li>
+<li>un nod al arborelui împreună cu toți descendenții săi formează un subarbore;</li>
+</ul>
+        </li>
+        <li id="2"><b class="tipp">Arbore binar</b><br>
+            <p>Se numește arbore binar un arbore cu rădăcină în care fiecare nod are cel mult doi descendenți direcți: descendentul stâng și descendentul drept.</p>
+            <img src="https://www.pbinfo.ro/resurse/9dc152/articole/arbori-binari/arbore-binar-1.png">
+            <h4 style="text-align: left;">În arborele de mai sus:</h4>
+                <ul>
+                <li>nodul 1 este rădăcina;</li>
+                <li>rădăcina are doi descendenți direcți (fii): 2 este descendent stâng a lui 1, iar 3 este descendent drept;</li>
+                <li>nodul 2 are un singur descendent, pe 4. Acesta este descendent stâng al lui 2;</li>
+                <li>similar, 7 este descendent drept al lui 4;</li>
+                <li>nodurile 5, 6 și 7 sunt noduri terminale (frunze).</li>
+
+</ul>
+        </li>
+        <li id="3"><b class="tipp">Arbore binar complet</b>
+        <p>Un arbore binar în care toate nivelurile, cu excepția posibilului ultim nivel, sunt complet umplute, iar toate nodurile sunt cât mai la stânga posibil.</p>
+            <img src="https://www.pbinfo.ro/resurse/9dc152/articole/arbori-binari/arbore-binar-complet.png">
+            <br><b>Proprietati:</b>
+            <ul>
+                <li>
+                   <b> Structură compactă:</b> Nodurile sunt aranjate într-o structură compactă, ceea ce permite utilizarea eficientă a memoriei.
+                </li>
+                <li>  
+                     <b> Indexare eficientă:</b> Arborii binari compleți sunt adesea implementați folosind array-uri datorită proprietăților lor de compactitate și indexare simplă.
+                    </li>
+                    <li>
+                     <b>Echilibrat aproape complet:</b> Arborii binari compleți sunt aproape perfect echilibrați, având adâncimi aproape egale pentru toate nodurile frunză.</li>
+            </ul>
+    </li>
+    <li id="4"><b class="tipp">Arbore binar perfect echilibrat </b>
+        <p>Un arbore binar perfect echilibrat este un arbore binar care are proprietatea că, pentru fiecare nod al său, diferența dintre numărul de noduri dintre subarborele stâng și subarborele drept este cel mult 1.</p>
+        <br><b>Proprietati:</b>
+        <ul>
+            <li>
+                <b>Niveluri complet umplute:</b> Fiecare nivel al arborelui conține numărul maxim posibil de noduri.
+            </li>
+            <li><b>Adâncime uniformă:</b> Toate frunzele arborelui sunt la același nivel.</li>
+            <li><b>Simetrie:</b> Arborele este simetric în ceea ce privește structura sa, fiecare subarbore al unui nod având aceeași structură ca și subarborele fratelui său.</li>
+        </ul>
+    </li>
+    <li id="5"><b class="tipp">Arbore binar strict</b>
+   <p> Se numeste arbore binar strict un arbore binar in care fiecare nod cu exceptia nodurilor terminale are exact doi fii=> numarul de noduri intr-un arbore binar strict este un numar impar.</p>
+    <br><br><img src="https://www.pbinfo.ro/resurse/9dc152/articole/arbori-binari/arbore-binar-strict.png">
+   <br><b>Proprietati:</b>
+  <ul>
+ <li><b>Număr fix de copii:</b> nod intern are exact doi copii, iar frunzele nu au copii.</li>
+<li><b>Structură specifică:</b> Dacă un nod are un copil, atunci trebuie să aibă și celălalt copil.</li>
+<li><b>Numărul de noduri și frunze:</b> Într-un arbore binar strict, dacă I este numărul de noduri interne și L este numărul de frunze, atunci L=I+1.</li>
+</ul>
+    </li>
+   <li id="6">
+        <b class="tipp">Arbore binar de sortare/cautare</b>
+        <br>
+        <p>Se numeste arbore binar de sortare un arbore in care pentru fiecare nod informatia memorata este mai mare egala cu informatiile tuturor nodurilor din subarborele stang si mai mica decat toate informatiile din subarborele drept.</p>
+        <br><br><img src="https://www.pbinfo.ro/resurse/9dc152/articole/arbori-binari-de-cautare/arbore-binar-de-cautare.png">
+        <br><b>Proprietati:</b>
+        <ul>
+            <li><b>Căutare eficientă:</b> Datorită structurii sale, un BST permite căutări eficiente. Timpul de căutare este O(h), unde 
+                h este înălțimea arborelui.</li>
+                <li><b>Inserare și ștergere:</b> Operațiile de inserare și ștergere într-un BST sunt, de asemenea, eficiente, având o complexitate de 
+                O(h).</li>
+                <li><b>Traversări:</b> BST permite diverse tipuri de traversări care pot fi folosite pentru a parcurge nodurile arborelui în ordine specifică (in-order, pre-order, post-order).</li>
+        </ul>
+    </li>
+    <li id="7">
+        <b class="tipp">Arbore AVL</b><br>
+        <p>Un arbore AVL este un tip de arbore binar de căutare care menține un echilibru echitabil prin restricționarea diferenței de înălțime dintre subarborii fiecărui nod. Această diferență, numită factor de echilibru, trebuie să fie de cel mult 1 pentru ca arborele să rămână echilibrat.</p>
+    <img src="https://th.bing.com/th/id/R.dc7568083875ba261fdafa0c4aa9d6d6?rik=hGxqqHcFUkU2RQ&riu=http%3a%2f%2focw.cs.pub.ro%2fcourses%2f_media%2fsd-ca%2flaboratoare%2favl-tree-wbalance_k.svg.png%3fw%3d500%26tok%3d6d55d9&ehk=agMeSJ61ckfpOC6RPfS81X0RiqDGdZiK1HHBm0X%2fUTg%3d&risl=&pid=ImgRaw&r=0">
+    <br><b>Proprietati:</b>
+    <ul>
+        <li><b>Echilibru:</b> Pentru fiecare nod din arbore, înălțimea subarborilor stâng și drept diferă cu cel mult 1.</li>
+<li><b>Operații eficiente:</b> Datorită echilibrului său, toate operațiile de căutare, inserare și ștergere se efectuează în timp 
+O(logn).</li>
+<li><b>Autobalansare:</b> După fiecare inserare sau ștergere, arborele se reechilibrează automat prin rotații.</li>
+    </ul>
+</li>
+    <li id="8"><b class="tipp">Arbore B</b><br>
+        <p>Un arbore B este un arbore de căutare echilibrat care menține datele sortate și permite căutări, inserări, ștergeri și accesuri secvențiale eficiente. Arborii B sunt deosebit de utili pentru stocarea datelor pe discuri sau alte medii care implică operațiuni de intrare-ieșire (I/O) mari. Arborii B sunt definiți printr-o ordine 
+
+m, care determină capacitatea fiecărui nod.</p>
+<br><b>Proprietati:</b>
+<ul>
+    <li><b>Grad minim:</b> Un arbore B de grad minim 
+t (unde 
+t≥2) are următoarele proprietăți:
+<ul>
+<li>Fiecare nod are cel puțin 
+t−1 și cel mult 
+2t−1 chei.</li>
+<li>Fiecare nod intern (non-frunză) are cel puțin 
+t și cel mult 
+2t copii.</li>
+<li>Rădăcina poate avea între 1 și 
+2t−1 chei.</li>
+<li>Toate frunzele sunt la aceeași adâncime.</li>
+</ul>
+</li>
+<li>Structură multi-ramură: Fiecare nod intern din arbore conține un anumit număr de chei care separă intervalele de valori atribuite fiecărui copil.</li>
+</ul>
+    </li>
+    <li id="9">
+        <b class="tipp">Arbore de acoperire minima</b><br>
+        <p>Un arbore minim de acoperire sau un arbore de acoperire de pondere minimă este o submulțime a muchiilor unui graf neorientat conex cu muchii ponderate, care toate nodurile între ele, fără cicluri și cu ponderea totală a muchiilor minimă. Adică este un arbore de acoperire⁠ a cărui sumă a ponderilor muchiilor este cât mai mică posibil.Algoritmii Prim și Kruskal sunt frecvent folosiți pentru o găsi.</p>
+        <br><b>Proprietati:</b>
+        <ul>
+        <li><b>Include toate vârfurile:</b> MST trebuie să includă toate vârfurile grafului original.</li>
+        <li><b>Subgraf aciclic:</b> MST nu conține cicluri.</li>
+        <li><b>Cost minim:</b> Suma ponderilor muchiilor din MST este minimă comparativ cu toate celelalte subgrafuri posibile care includ toate vârfurile.</li>
+    </ul>
+    </li>
+    <li id="10"><b class="tipp">Arbore de intervale </b>
+        <br>
+        <p>Un arbore de intervale este o structură de date similară cu un arbore binar, în care fiecare nod conţine informaţii despre un anumit interval dintr-un şir. La cazul general, un nod reține informații despre intervalul [st, dr].</p>
+        <br><img src="https://th.bing.com/th/id/OIP.2lAoWIACzPov9cNUGbP6TQHaE1?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="width: 25%;">
+        <br><b>Proprietati:</b>
+        <ul><li><b>Noduri:</b> Fiecare nod al arborelui reprezintă un interval și conține:
+            <ul>
+            <li>Intervalul [low,high]</li>
+            <li>Maximul valorii de dreapta (high) dintre toate intervalele din subarborele respectiv.</li>
+        </ul></li>
+        <li><b>Subarbori:</b> Subarborele stâng conține intervale cu punctul de început mai mic decât cel al rădăcinii, iar subarborele drept conține intervale cu punctul de început mai mare sau egal.</li>
+        </ul>
+    </li>
+    <li id="11">
+        <b class="tipp">Arbore de ordine</b><br>
+        <p>Un arbore de ordine, denumit și arbore B de ordine 
+            m, este un arbore de căutare echilibrat folosit pentru gestionarea eficientă a datelor pe medii de stocare externe, precum discurile dure. Arborii de ordine sunt generalizări ale arborilor binari de căutare și permit un număr variabil de chei în fiecare nod, facilitând operații eficiente de căutare, inserare și ștergere.
+            
+            </p>
+            <br><b>Proprietati</b>
+            <ul><li><b> Noduri:</b> Fiecare nod conține o cheie, un contor al dimensiunii subarborelui și indicatori către subarborele stâng și drept.</li>
+            <li><b>Dimensiunea subarborelui:</b> Fiecare nod x păstrează un contor size[x] care reprezintă numărul total de noduri din subarborele care are x drept rădăcină, inclusiv x însuși.</li>
+            <li><b>Structură de bază:</b> Arborele de ordine poate fi un arbore binar de căutare, un arbore roșu-negru, un arbore AVL sau orice alt tip de arbore de căutare autobalansat, adaptat pentru a păstra dimensiunea subarborelor.</li>
+        </ul>
         </li>
     </ol>
+    
     <br><br><br><br><br>
 </main>
 
