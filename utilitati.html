@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="index">
+    <link
+    rel="stylesheet"
+    href="style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arbori.info</title>
 </head>
 <body>
-    
+    <header>
+        <span class="logo">Arbori.informatica</span>
+        <nav class="nav-links">
+            <a href="index.html"  class="as sel"  >Acasa</a>
+            <a href="tipuri.html" class="as" >Tipuri</a>
+            <a href="utilitati.html" class="as" >Utilitate</a>
+        </nav>
+    </header>
+    <main>
+       <b><h1>Arbori</h1></b>
+       <p>
+        Vrei sa stii ce sunt arborii?<br>
+        Nu,nu arborii din categoria plantelor,ci arbori in domeniul informaticii!<br>
+        Daca da,atunci ai venit in locul potrivit,voi incerca sa iti explic aceste notiuni interesante.
+    </p><hr>
+    <p>
+        Pentru a intelege conceptul de arbori trebuie mai intai sa te induc in <a href="graf.html" class="lik">TEORIA GRAFURILOR</a>,deoarece arborii sunt defapt grafuri.<br>
+        <br> Acum ca ai inteles ce este un graf,e timpul sa definim arborii:<br><br>
+        <br>
+        Un arbore este un tip special de graf neorientat care îndeplinește următoarele proprietăți:
+
+        <ul>
+            <li>Conectivitate: Fiecare pereche de noduri din arbore este conectată prin exact un drum. Aceasta înseamnă că există un singur mod de a ajunge de la un nod la altul, fără nicio deviere.</li>
+            <li>Fără cicluri: Un arbore nu conține cicluri, adică nu există niciun drum în arbore care să înceapă și să se termine în același nod, traversând alte noduri și muchii în acest proces.</li>
+            <li>
+                n noduri și n-1 muchii: Un arbore cu 
+                n noduri are exact 
+                n−1 muchii. Aceasta este o condiție necesară și suficientă pentru ca un graf să fie un arbore.
+            </li>
+        </ul>
+    </p>
+
+    </main>
+    <footer>Arbori</footer>
+
 </body>
 </html>
