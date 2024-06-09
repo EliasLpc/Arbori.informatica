@@ -13,10 +13,11 @@ font-family: Arial, Helvetica, sans-serif;
 html, body {
     min-height: 100%;
 }
-h6{font-size: 12pt;
-text-align: center;
-margin-bottom: 0.4rem;
-margin-top: 0.2rem;}
+aside h6{font-size: 16pt;
+text-align: left;
+margin-bottom: 0.7rem;
+border: #1B1A55 solid 1rem;
+margin-top: 0.3rem;}
 .asezare .img { flex-shrink: 0;
 height: min-content; }
 
@@ -25,22 +26,31 @@ body{ background-color: #070F2B; }
 body.graf { background-color: #9290C3; }
 body.tipuri{background-color: #9290C3;}
 div.asezare{display: flex;}
-
+.tipp{font-size: 16pt;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
 aside{width: 17rem;
-height: 50rem;
+height: 40rem;
 background-color: #9290C3;
 border-right-style:solid;
 border-right-width:1px ;
 box-shadow: 0 2px 3px 0 #9290C3, 0 4px 10px 0 #535C91;
 border-right-color:transparent;
 overflow-y: scroll;
-
-
+margin-top: 4rem;
+position: sticky;
+top: 5rem;
+bottom: 0;
 }
+ol li {margin-top: 3rem;
+margin-bottom: 3rem;}
+
+ol li p{font-size: 12pt;
+text-align: left;}
 .sidemain{
     display: flex;
 }
-.tipurimain{flex-shrink: 2;
+.tipurimain{
+    flex-shrink: 2;
     width: 100%;
     border-left-style:solid;
     border-left-width:1px ;
@@ -50,7 +60,7 @@ overflow-y: scroll;
 .tips{margin-left: 4rem;}
 header{ background-color: #1B1A55;
     top: 0;
-height: 4rem;
+height: 5rem;
 width: 100%;
 position: fixed;
 display: flex;
@@ -150,7 +160,7 @@ margin-left: 4rem;
 margin-right: 4rem;
 
 }
-
+ol ul li{margin: 1.5rem 0;}
 
 ul {
     margin-left: 7ch;
