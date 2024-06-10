@@ -16,10 +16,14 @@ html, body {
 aside h6{font-size: 16pt;
 text-align: left;
 margin-bottom: 0.7rem;
-border: #1B1A55 solid 1rem;
-margin-top: 0.3rem;}
+border: #1B1A55 solid 0.7rem;
+margin-top: 0.3rem;
+border-radius: 100vw;
+padding:1rem;
+}
 .asezare .img { flex-shrink: 0;
-height: min-content; }
+height: min-content; 
+}
 
 body{ background-color: #070F2B; }
 
@@ -78,7 +82,10 @@ font-size: 25pt;
 margin-top: 8rem;}
 .logo{padding-left: 2rem;
 padding-right: 50%;
-background-color: #1B1A55;}
+background-color: #1B1A55;
+font-family: "Bitter",serif;
+font-optical-sizing: auto;
+font-style: normal;}
 .as{display: inline-block;
     font-size: 1.5rem;
     text-align: center;
