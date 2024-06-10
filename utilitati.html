@@ -3,46 +3,195 @@
     <link
     rel="stylesheet"
     href="style.css">
-<head>
+<head ><link rel="preconnect" href="https://fonts.googleapis.com"
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arbori.info</title>
 </head>
+<style>
+    li{margin-left: 4rem;}
+</style>
 <body>
     <header>
-        <span class="logo">Arbori.informatica</span>
+        <span class="logo" ><a href="#start">Arbori.informatica</a></span>
         <nav class="nav-links">
-            <a href="index.html"  class="as sel"  >Acasa</a>
+            <a href="index.html"  class="as"  >Acasa</a>
             <a href="tipuri.html" class="as" >Tipuri</a>
-            <a href="utilitati.html" class="as" >Utilitate</a>
+            <a href="utilitati.html" class="as sel" >Utilitate</a>
         </nav>
     </header>
-    <main>
-       <b><h1>Arbori</h1></b>
-       <p>
-        Vrei sa stii ce sunt arborii?<br>
-        Nu,nu arborii din categoria plantelor,ci arbori in domeniul informaticii!<br>
-        Daca da,atunci ai venit in locul potrivit,voi incerca sa iti explic aceste notiuni interesante.
-    </p><hr>
-    <p>
-        Pentru a intelege conceptul de arbori trebuie mai intai sa te induc in <a href="graf.html" class="lik">TEORIA GRAFURILOR</a>,deoarece arborii sunt defapt grafuri.<br>
-        <br> Acum ca ai inteles ce este un graf,e timpul sa definim arborii:<br><br>
-        <br>
-        Un arbore este un tip special de graf neorientat care îndeplinește următoarele proprietăți:
+    <div class="sidemain">
+    <aside style="top: 5rem;height: 40rem;width: 17rem;bottom: 0;position: sticky;">
+        <a href="#1"><h6>1.Reprezentarea structurii datelor</h6></a>
+        <a href="#2"><h6>2.Rețelele de comunicații</h6></a>
+        <a href="#3"><h6>3.Compresia datelor</h6></a>
+        <a href="#4"><h6>4.Inteligența artificială și algoritmi de căutare</h6></a>
+        <a href="#5"><h6>5.Biologie și filogenie</h6></a>
+        <a href="#6"><h6>6.Organizarea și gestionarea informațiilor</h6></a>
+        <a href="#7"><h6>7.Analiza fluxurilor de date și calculul distribuit</h6></a>
+        <a href="#8"><h6>8.Jocuri și simulări</h6></a>
+       
+        <br><br><br><br>
+    </aside>
+    <main class="tipurimain">
+        <h1 style="text-align: center; top: 0rem; margin-top: 9rem;" id="start">Utilitatile arborilor</h1>
+        <ol style="margin-left: 5rem;">
+            <li><h2>Reprezentarea structurii datelor</h2>
+                <ul>
+                <li>Arbori binari de căutare (BST): Sunt folosiți pentru organizarea și căutarea rapidă a datelor.</li>
+                <li>Heap-uri: Structuri de date care permit accesul rapid la elementul minim sau maxim, utile în algoritmi de sortare precum heapsort și în implementarea cozilor de priorități.</li>
+                <li>Arbori AVL și Red-Black: Versiuni balansate ale arborilor binari de căutare care asigură complexități logaritmice pentru operațiile de inserare, ștergere și căutare.</li>
+            </ul>
 
-        <ul>
-            <li>Conectivitate: Fiecare pereche de noduri din arbore este conectată prin exact un drum. Aceasta înseamnă că există un singur mod de a ajunge de la un nod la altul, fără nicio deviere.</li>
-            <li>Fără cicluri: Un arbore nu conține cicluri, adică nu există niciun drum în arbore care să înceapă și să se termine în același nod, traversând alte noduri și muchii în acest proces.</li>
-            <li>
-                n noduri și n-1 muchii: Un arbore cu 
-                n noduri are exact 
-                n−1 muchii. Aceasta este o condiție necesară și suficientă pentru ca un graf să fie un arbore.
             </li>
-        </ul>
-    </p>
+       <li> <h2>Rețelele de comunicații</h2>
+        <p style="font-size: 16pt;">Rețelele de comunicații sunt infrastructuri esențiale pentru transmiterea informațiilor între calculatoare, dispozitive și alte echipamente. Arborii au o utilizare extensivă și esențială în proiectarea și optimizarea acestor rețele datorită proprietăților lor unice. Iată o dezvoltare detaliată a utilizării arborilor în rețelele de comunicații:</p>
 
+         <ol><li><h3>Arbori de acoperire minimă (Minimum Spanning Tree - MST)</h3>
+        <p>Un MST este un subgraf care conectează toate nodurile dintr-o rețea cu un cost total minim și fără a forma cicluri. Acest concept este crucial pentru:</p>
+        <ul>
+        <li>Proiectarea rețelelor de infrastructură: Asigurarea conectivității între diferite noduri (sau locații) cu un cost minim. Algoritmi precum Kruskal și Prim sunt frecvent utilizați pentru a găsi un MST.</li>
+        <li>Optimizarea cablajului în rețelele fizice: Minimizați lungimea totală a cablurilor necesare pentru a conecta toate nodurile, ceea ce reduce costurile de instalare și întreținere.</li>
+    </ul>
+    </li>
+       <li><h3> Arbori de rutare:</h3>
+       <ul><li> Protocolul de rutare în rețelele IP: Arborii sunt folosiți pentru a determina rutele optime între sursă și destinație. De exemplu, protocolul OSPF (Open Shortest Path First) utilizează arbori pentru a construi rutele cele mai scurte între noduri.</li>
+        <li>Algoritmi de rutare multicast: Pentru a trimite date simultan la multiple destinații, arborii spanning sunt utilizați pentru a asigura o transmisie eficientă. Protocolul PIM (Protocol Independent Multicast) este un exemplu care utilizează arbori de rutare pentru a distribui pachetele multicast.</li>
+    </ul></li>
+        <li><h3>Arbori de distribuție:</h3>
+        <ul><li>Rețele P2P (Peer-to-Peer): Arborii sunt folosiți pentru a organiza nodurile în rețele de tip overlay, facilitând distribuirea și căutarea eficientă a resurselor.</li>
+        <li>Sisteme de streaming video și audio: Arborii de distribuție permit livrarea eficientă a conținutului multimedia către multiple utilizatori în timp real.</li>
+    </ul></li>
+       <li> <h3>Managementul și monitorizarea rețelelor:</h3><ul>
+        <li>Arbori de gestionare SNMP (Simple Network Management Protocol): Structurile de tip arbore sunt utilizate pentru organizarea și accesarea informațiilor de gestionare a rețelelor.</li>
+        <li>Detectarea și izolarea defecțiunilor: Arborii ajută la identificarea rapidă a punctelor de defecțiune și la izolarea problemelor, asigurând astfel o mai bună întreținere și reparare a rețelei.</li>
+    </ul></li>
+    <li> <h3>Topologii de rețea:</h3>
+        <ul><li>Topologia de tip arbore (Tree topology): Această topologie este utilizată în rețelele locale (LAN), unde un nod rădăcină (root) central controlează traficul rețelei, iar celelalte noduri sunt conectate în mod ierarhic.</li>
+        <li> Arhitecturi ierarhice de rețea: În rețelele mari, arhitecturile ierarhice bazate pe arbori sunt folosite pentru a segmenta rețeaua în straturi, facilitând gestionarea și extinderea rețelei.</li>
+    </ul></li>
+    <li> <h3>Proiectarea rețelelor de senzori și IoT (Internet of Things):</h3>
+        <ul>
+           <li> Rețelele de senzori wireless (WSN): Arborii sunt folosiți pentru a organiza și a gestiona rețelele de senzori, asigurând colectarea și transmiterea eficientă a datelor către un nod central.</li>
+        <li>Protocolul Zigbee: Utilizat în rețelele IoT, folosește o topologie de tip arbore pentru a structura dispozitivele și a gestiona traficul de date.</li>
+    </ul></li>
+    <li><h3>Scalabilitate și eficiență în rețele distribuite:</h3><ul>
+        <li>Arbori de acoperire (Spanning Trees) pentru rețele distribuite: Asigură că toate nodurile sunt accesibile fără redundanțe inutile, optimizând astfel utilizarea resurselor rețelei.</li>
+        <li>Balansarea încărcării (Load Balancing): Arborii sunt utilizați pentru a distribui sarcinile uniform între noduri, asigurând o performanță optimă a rețelei.</li>
+    </ul></li>
+    </ol>
+    </li>
+    <li>
+        <h2>Compresia datelor </h2>
+       <p style="font-size: 16pt;">Compresia datelor este un proces esențial pentru reducerea dimensiunii fișierelor și economisirea spațiului de stocare și a lățimii de bandă. Arborii joacă un rol central în mai multe tehnici de compresie a datelor, inclusiv în codificarea Huffman și în alte metode avansate. Iată un rezumat al principalelor tehnici de compresie și utilizarea arborilor în acest context:</p>
+
+<ol> <li><h3>Codificarea Huffman</h3><ul>
+<li>Construirea Arborelui Huffman: Fiecare caracter din fișier este asociat cu o frecvență și este reprezentat ca o frunză. Nodurile sunt combinate iterativ, formând un arbore binar cu cost minim.</li>
+<li>Generarea Codurilor: Traversând arborele de la rădăcină la frunză, se generează coduri binare pentru fiecare caracter, unde drumurile din arbore sunt transformate în secvențe de biți.</li>
+</ul>
+</li>
+<li><h3> Codificarea Aritmetică</h3><ul>
+<li>Principiu: Împarte intervalul [0, 1) în sub-intervale proporționale cu probabilitățile simbolurilor. Fiecare simbol rafinează intervalul.</li>
+<li>Arbori de Interval: Utilizați pentru gestionarea sub-intervalelor în timpul codificării și decodificării.</li>
+</ul>
+</li>
+<li><h3> Algoritmi Lempel-Ziv (LZ77 și LZ78)</h3><ul>
+<li>LZ77: Utilizează o fereastră glisantă pentru a găsi și codifica repetițiile de secvențe de caractere.</li>
+<li>LZ78: Construiește un dicționar de fraze din datele de intrare, utilizând structuri de tip arbore pentru gestionarea frazelor.</li>
+</ul>
+</li>
+<li><h3> Compresia Imaginilor și Videoclipurilor</h3>
+<ul><li>Compresia Wavelet: Descompune imaginea în componente de frecvență, organizate ierarhic într-un arbore.</li>
+<li>Compresia Fractală: Identifică și codifică blocuri auto-similare, folosind structuri de tip arbore pentru organizarea datelor.</li>
+
+</ul></li>
+<li><h3> Compresia Datelor Audio</h3><ul>
+<li>Transformate Fourier și Wavelet: Utilizează transformări pentru analizarea și comprimarea datelor audio, reprezentate adesea prin arbori de coeficienți.</li>
+</ul></li>
+<li><h3> Compresia Genomică</h3><ul>
+<li>Arborii de Sufix: Utilizați pentru a găsi repetiții și structuri comune în secvențele ADN, facilitând compresia eficientă.</li>
+<li>Arborii oferă structuri eficiente pentru organizarea, codificarea și optimizarea datelor în diverse tehnici de compresie, asigurând reducerea dimensiunii fișierelor și eficientizarea stocării și transmisiei datelor.</li>
+</ul>
+</li>
+</ol>   
+</li>
+<li>
+    <h2>Inteligența artificială și algoritmi de căutare</h2>
+    <p style="font-size: 16pt;">În inteligența artificială (IA) și algoritmii de căutare, arborii sunt esențiali pentru organizarea și explorarea spațiilor de soluții. Iată o privire rapidă asupra utilizării arborilor în acest context:</p>
+
+<ol> <li><h3>Arbori de Decizie</h3><ul>
+<li>Utilizare: Modele predictive care iau decizii bazate pe datele de antrenament.</li>
+<li>Structură: Nodurile interne reprezintă caracteristici, iar frunzele reprezintă deciziile sau clasele.</li>
+</ul>
+</li>
+<li><h3>Algoritmi de Căutare</h3>
+<ul><li>Căutarea în Spațiul Stărilor: Arborii de căutare explorează posibilele stări sau soluții ale unei probleme.</li>
+<li>Algoritmi:<ul>
+<li>DFS (Depth-First Search): Explorează adâncimea maximă înainte de a reveni la niveluri anterioare.</li>
+<li>BFS (Breadth-First Search): Explorează toate nodurile de la un nivel înainte de a trece la nivelul următor.</li>
+<li>A*: Caută cel mai scurt drum folosind o funcție euristică pentru a estima costul rămas.</li>
+
+</ul></li></ul></li>
+<li> <h3>Algoritmi Minimax și Alpha-Beta Pruning</h3><ul>
+<li>Utilizare în Jocuri: Folosiți pentru a evalua posibilele mișcări și a determina strategia optimă.</li>
+<li>Minimax: Evaluează mișcările unui joc prin maximizarea câștigului minim garantat.</li>
+<li>Alpha-Beta Pruning: Optimizează Minimax prin eliminarea ramurilor care nu pot influența decizia finală.</li>
+</ul></li>
+<li><h3>Învățarea pe Bază de Arbori</h3><ul>
+<li>Arbori de Regresie și Clasificare: Modele de învățare automată care partitionează datele în subseturi omogene.</li>
+<li>Random Forests: Combină multiple arbori de decizie pentru a îmbunătăți precizia și a reduce overfitting-ul.</li>
+</ul></li>
+</ol>
+</li>
+<li><h2>Biologie și filogenie</h2>
+    <p style="font-size: 16pt;"> În biologie și filogenie, arborii sunt folosiți pentru a reprezenta relațiile evolutive dintre diferite specii sau gene. Iată un exemplu:</p>
+
+<h3 style="margin-left: 5rem;">Arborii Filogenetici</h3><ul>
+<li>Utilizare: Reprezintă relațiile evolutive și istorice dintre specii.</li>
+<li>Structură: Nodurile interne reprezintă strămoși comuni, iar frunzele reprezintă speciile actuale sau genele.</li>
+</ul>
+</li>
+<li>
+  <h2>Organizarea și gestionarea informațiilor</h2>
+    <p style="font-size: 16pt;">În organizarea și gestionarea informațiilor, arborii sunt esențiali pentru structurarea eficientă a datelor:</p>
+<ul>
+    <li>Sisteme de fișiere: Utilizează arbori pentru a organiza directoarele și fișierele într-o ierarhie ușor de navigat.</li>
+    <li>Baze de date: Arborii B și B+ optimizează căutările, inserțiile și ștergerile de date, asigurând acces rapid și eficient.</li>
+    <li>Structuri de date: Arborii AVL și Red-Black sunt folosiți pentru menținerea echilibrului și performanței în operațiile de căutare.</li>
+    <li>XML/JSON Parsing: Arborii reprezintă structurile ierarhice ale documentelor XML și JSON, facilitând navigarea și manipularea datelor.</li>
+    <li>Indexarea informațiilor: Arborii de sufix și arborii trie sunt folosiți pentru indexarea rapidă a textului și a căutărilor autocomplete.</li>
+</ul>
+</li>
+<li><h2>Analiza fluxurilor de date și calculul distribuit</h2>
+    <p style="font-size: 16pt;"> În analiza fluxurilor de date și calculul distribuit, arborii sunt esențiali pentru eficientizarea și organizarea proceselor de date:</p>
+<ul>
+<li>Arbori de acoperire minimă (MST): Utilizați pentru a conecta eficient nodurile în rețele distribuite, minimizând costurile de comunicație.</li>
+<li>Protocole de difuzare: Arborii spanning asigură transmiterea eficientă a mesajelor către toate nodurile într-o rețea.</li>
+<li>Agregarea datelor: Arborii sunt folosiți pentru a colecta și combina date din diferite surse, reducând redundanțele și latența.</li>
+<li>Balansarea încărcării: Distribuie uniform sarcinile între noduri, prevenind supraîncărcarea și asigurând performanță optimă.</li>
+<li>Detectarea defecțiunilor: Arborii ajută la identificarea rapidă și izolarea problemelor în rețelele distribuite.</li>
+</ul>
+</li>
+<li><h2>Jocuri și simulări</h2>
+    <p style="font-size: 16pt;">În jocuri și simulări, arborii sunt utilizați pentru optimizarea deciziilor și explorarea posibilelor mișcări:</p>
+<ul>
+<li>Arbori de jocuri: Modelează toate posibilele stări ale unui joc, ajutând la planificarea și evaluarea strategiilor.</li>
+<li>Algoritmi Minimax: Folosiți pentru a determina mișcarea optimă în jocuri cu doi jucători, maximizând câștigul minim garantat.</li>
+<li>Alpha-Beta Pruning: Optimizează algoritmul Minimax prin eliminarea ramurilor care nu influențează decizia finală, reducând timpul de calcul.</li>
+<li>Simulări pe bază de arbori: Modelează scenarii complexe și evoluția acestora în timp, ajutând la previziuni și analize strategice.</li>
+<li>Montre Carlo Tree Search (MCTS): Combinație de simulări aleatorii și arbori de căutare pentru a găsi cele mai bune mișcări în jocuri complexe, cum ar fi Go.</li>
+</ul>
+</li>
+    </ol>
+    
     </main>
+</div><br><br><br><br>
     <footer>Arbori</footer>
-
+    
 </body>
 </html>
